@@ -12,7 +12,7 @@
     .container{
         justify-content: center;
         display: grid;
-        grid-template-columns: [column1-start] 100px [column2-start] 100px [column3-start] 200px [column4-start] 100px [column5-start] 100px;
+        grid-template-columns: [column1-start] 100px [column2-start] 100px [column3-start] 100px [column4-start] 100px [column5-start] 100px [column6-start] 100px;
         grid-template-rows: [row1-start] 40px [row2-start] 40px [row3-start] 40px [row4-start] 40px [row5-start] 40px [row6-start] 40px;
         row-gap: 10px;
     }
@@ -20,7 +20,7 @@
     .notes{
         border-radius: 5px;
         box-shadow: 3px 7px #FFE7A0;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row1-start / row2-start;
         background-color: #FFF5B8;
         
@@ -29,7 +29,7 @@
     .exercises{
         border-radius: 5px;
         box-shadow: 3px 7px #F1D4E5;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row2-start / row3-start;
         background-color: #FCE9F1
     }
@@ -37,28 +37,28 @@
     .siralama{
         border-radius: 5px;
         box-shadow: 3px 7px #D8C4B6;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row3-start / row4-start;
     }
 
     .yarisma{
         border-radius: 5px;
         box-shadow: 3px 7px #D8C4B6;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row4-start / row5-start;
     }
     
     .deneme{
         border-radius: 5px;
         box-shadow: 3px 7px #D8C4B6;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row5-start / row6-start;
     }
 
     .deneme-2{
         border-radius: 5px;
         box-shadow: 3px 7px #D8C4B6;
-        grid-column:column3-start;
+        grid-column:column3-start / column5-start;
         grid-row: row6-start;
     }
 
@@ -66,6 +66,7 @@
         display: flex;
         height: 40px;
         justify-content: center;
+        align-items: center;
     }
     
     .flex-symbol{
@@ -95,9 +96,109 @@
     }
 
     .icons{
+        width: 40px;
+        height: 40px;
         align-self: center;
         margin: auto;
         margin-right: 10px;
     }
    
+}
+
+@media (min-width:576px) and (max-width:992px){
+    .container{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: [column1-start] 100px [column2-start] 100px [column3-start] 100px [column4-start] 100px [column5-start] 100px [column6-start] 100px;
+        grid-template-rows: [row1-start] 40px [row2-start] 40px [row3-start] 40px [row4-start] 40px [row5-start] 40px [row6-start] 40px [row7-start] 40px;
+        row-gap: 10px;
+    }
+
+    .notes{
+        border-radius: 5px;
+        box-shadow: 3px 7px #FFE7A0;
+        grid-column:column2-start / column4-start;
+        grid-row: row1-start / row3-start;
+        background-color: #FFF5B8;
+        
+    }
+
+    .exercises{
+        border-radius: 5px;
+        box-shadow: 3px 7px #F1D4E5;
+        grid-column:column4-start / column6-start;
+        grid-row: row1-start / row3-start;
+        background-color: #FCE9F1
+    }
+
+    .siralama{
+        border-radius: 5px;
+        box-shadow: 3px 7px #D8C4B6;
+        grid-column:column2-start / column4-start;
+        grid-row: row3-start / row5-start;
+    }
+
+    .yarisma{
+        border-radius: 5px;
+        box-shadow: 3px 7px #D8C4B6;
+        grid-column:column4-start / column6-start;
+        grid-row: row3-start / row5-start;
+    }
+    
+    .deneme{
+        border-radius: 5px;
+        box-shadow: 3px 7px #D8C4B6;
+        grid-column:column2-start / column4-start;
+        grid-row: row5-start / row7-start;
+    }
+
+    .deneme-2{
+        border-radius: 5px;
+        box-shadow: 3px 7px #D8C4B6;
+        grid-column:column4-start / column6-start;
+        grid-row: row5-start / row7-start;
+    }
+
+    .flexbox{
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-symbol{
+        display: flex;
+        height: 40px;
+        width: 100px;
+        
+        
+         
+    }
+
+    .flex-title{
+        display: flex;
+        height: 40px;
+        width: 100px;
+        color: #121212; 
+        font-size: 30px;
+        
+    }
+
+    .titles{
+        margin: auto;
+        margin-left: 0px;
+        padding: 0;
+        font-family: Josefin;
+        
+    }
+
+    .icons{
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        margin: auto;
+        margin-right: 10px;
+    }
+   
+
 }
