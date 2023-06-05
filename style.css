@@ -237,6 +237,43 @@
         background-color: #00C4FF;
     }
 
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 450px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 5px dotted black;
+
+    }
+
+    .name{
+        display: flex;
+        padding-top: 20px;
+        height: 140px;
+        width: 140px;
+        justify-content: center;
+
+    }
+
+    .webmaster{
+        display: flex;
+        height: 140px;
+        width: 140px;
+        align-items: flex-end;        
+        justify-content: center;
+    }
+
+
+
     .notes{
         border-radius: 5px;
         box-shadow: 3px 7px #FFE7A0;
