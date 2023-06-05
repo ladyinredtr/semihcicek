@@ -284,7 +284,7 @@
 
     .flexbox{
         display: flex;
-        height: 210px;
+        height: 230px;
         justify-content: center;
         align-items: center;
     }
