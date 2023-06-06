@@ -151,6 +151,11 @@
         margin: auto;
         margin-right: 10px;
     }
+
+    .notes-link{
+        text-decoration: none;
+    }
+
    
 }
 
@@ -296,6 +301,11 @@
         margin: auto;
         margin-right: 10px;
     }
+
+    .notes-link{
+        text-decoration: none;
+    }
+
    
 
 }
@@ -366,8 +376,7 @@
         box-shadow: 3px 7px #FFE7A0;
         grid-column:column3-start / column4-start;
         grid-row: row1-start / row4-start;
-        background-color: #FFF5B8;
-        
+        background-color: #FFF5B8;        
     }
 
     .exercises{
@@ -446,4 +455,9 @@
         margin: auto;
         margin-right: 10px;
     }
+
+    .notes-link{
+        text-decoration: none;
+    }
+
 }
