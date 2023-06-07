@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Josefin;
+    src: url(JosefinSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans-Light.ttf);
+}
+
+@media (min-width:992px) {
+    .grid{
+        display: grid;
+        grid-template-columns: [column1-start] 150px [column2-start] 150px [column3-start] 150px [column4-start] 150px [column5-start] 150px;
+        grid-template-rows: [row1-start] 100px [row2-start] 90px [row3-start] 90px [row4-start] 90px [row5-start] 90px [row7-start] 90px [row8-start] 90px[row9-start] 90px[row10-start] 90px;
+        row-gap: 10px;
+        font-family: OpenSans;
+        justify-content: center;
+    }
+
+    .home{
+        grid-column: column2-start / column5-start;
+        grid-row: row1-start;
+        font-family: Josefin;
+        background-color: #FCE9F1;
+        border-radius: 5px;
+        box-shadow: 3px 7px #F1D4E5;    
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    .flex{
+        display: flex;
+        width: 450px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        line-height: 100px;
+        text-align: center;    
+    }
+
+    .home h6{
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        height: 100px;
+    }
+    
+    .home>a{
+        text-decoration: none;
+        color: #121212;
+    }
+
+    .class{
+        text-align: center;
+        grid-column: column2-start / span 1;
+        grid-row: row2-start;
+        line-height: 90px;
+        background-color: #F98404;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+
+    .class-dropdown{
+        grid-column: column2-start / span 1;
+        grid-row: row3-start;
+    }
+
+    .topic{
+        text-align: center;
+        grid-column: column3-start / span 1;
+        grid-row: row2-start;
+        line-height: 90px;
+        background-color: #F98404;
+        
+        
+
+        
+    }
+
+    .topic-dropdown{
+        grid-column: column3-start / span 1;
+        grid-row: row3-start;
+    }
+
+    .search{
+        grid-column: column4-start / span 1;
+        grid-row: 2;
+        text-align: center;
+        line-height: 90px;
+        background-color: #F98404;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+
+    }
+
+    .search-button{
+        grid-column: column4-start / span 1;
+        grid-row: 3;
+    }
+
+
+
+}
