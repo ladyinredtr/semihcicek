@@ -51,7 +51,7 @@
         color: #121212;
     }
 
-    .class{
+    .difficulty{
         text-align: center;
         grid-column: column2-start / span 1;
         grid-row: row2-start;
@@ -61,11 +61,6 @@
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
 
-    }
-
-    .class-dropdown{
-        grid-column: column2-start / span 1;
-        grid-row: row3-start;
     }
 
     .topic{
@@ -80,11 +75,6 @@
         
     }
 
-    .topic-dropdown{
-        grid-column: column3-start / span 1;
-        grid-row: row3-start;
-    }
-
     .search{
         grid-column: column4-start / span 1;
         grid-row: 2;
@@ -97,10 +87,70 @@
 
     }
 
-    .search-button{
-        grid-column: column4-start / span 1;
-        grid-row: 3;
+    .difficulty-options{
+        display: grid;
+        grid-column: column2-start / span 1;
+        grid-row: row3-start;
+        grid-template-columns: [column1-start] 75px [column2-start] 75px;
+        grid-template-rows: [row1-start] 30px [row2-start] 30px [row3-start] 30px;
     }
+
+    .topic-options{
+        line-height: 30px;
+        text-align: center;
+        grid-column: column3-start / span 1;
+        grid-row: row3-start;
+    }
+
+    .search-button{
+        line-height: 90px;
+        text-align: center;
+        grid-column: column4-start / span 1;
+        grid-row: row3-start;
+    }
+
+    input[type="button"] {
+        /* CSS styles for the input button */
+         height: 45px; 
+         width: 80px; 
+         background-color: #198754;
+         color: white;
+    }
+    input[type="button"]:active{
+        background-color: gray;
+    }
+
+    h6{
+        margin: 0px;
+        display: inline-block;
+    }
+
+    .inputfield{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/4;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .difficulty-options>.title{
+        grid-column: 1/2;
+        grid-row: span 1;
+        line-height: 30px;
+    }
+
+    input[type='radio']{
+        display: flex;
+        width: 75px;
+        height: 26px;
+        padding: 0px;
+        margin: auto;
+        
+        
+        
+     }
+
+    
 
 
 
